@@ -16,7 +16,6 @@ WORKDIR /home/openplc
 
 RUN git clone https://github.com/thiagoralves/OpenPLC_v3.git
 WORKDIR /home/openplc/OpenPLC_v3
-COPY missing /home/openplc/OpenPLC_v3/utils/matiec_src/config/
 RUN ./install.sh custom
 
 RUN sudo apt-get clean
