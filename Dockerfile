@@ -19,7 +19,12 @@ RUN sudo ./install.sh custom
 
 RUN sudo apt-get clean
 
-EXPOSE 8080
-EXPOSE 502
+RUN mkdir /home/openplc/scripts
 
-ENTRYPOINT ["/home/openplc/OpenPLC_v3/start_openplc.sh"]
+COPY run.sh /home/openplc
+RUN sudo chmod +x /home/openplc/run.sh
+
+EXPOSE 502
+EXPOSE 8080
+
+CMD ["/home/openplc/run.sh"]
