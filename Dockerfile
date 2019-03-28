@@ -26,5 +26,7 @@ RUN sudo chmod +x /home/openplc/run.sh
 
 EXPOSE 502
 EXPOSE 8080
+EXPOSE 20000
+EXPOSE 43628
 
 CMD ["/home/openplc/run.sh"]
