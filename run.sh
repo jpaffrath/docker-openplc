@@ -19,4 +19,4 @@ sqlite3 /home/openplc/OpenPLC_v3/webserver/openplc.db "$SQL_SCRIPT"
 cp /home/openplc/scripts/mbconfig.cfg /home/openplc/OpenPLC_v3/webserver
 sqlite3 /home/openplc/OpenPLC_v3/webserver/openplc.db "$SQL_DEVICE"
 
-/home/openplc/OpenPLC_v3/start_openplc.sh
+sudo /home/openplc/OpenPLC_v3/start_openplc.sh
