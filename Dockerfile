@@ -4,7 +4,7 @@ USER root
 WORKDIR /root/
 RUN apt-get update && \
     apt-get -y install git python-pip autoconf bison build-essential pkg-config bison flex autoconf automake libtool make git python2.7 python-pip sqlite3 cmake sudo
-RUN pip install flask flask-login pyserial
+RUN pip install flask flask-login pyserial pymodbus
 
 RUN useradd --create-home --shell /bin/bash openplc
 RUN adduser openplc sudo && \
